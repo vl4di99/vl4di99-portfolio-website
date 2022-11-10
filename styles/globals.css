@@ -16,3 +16,23 @@
     font-family: "Bagero";
     src: url("../fonts/Bagero.otf");
 }
+
+@layer components {
+    .rotateY180{
+        transform: rotateY(180deg);
+    }
+
+    .rotateY180Scale{
+        transform: scale(1.2) rotateY(180deg);
+    }
+
+    .backFaceHide{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .cardRotate{
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+}
