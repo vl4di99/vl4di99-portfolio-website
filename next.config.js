@@ -1,7 +1,15 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-  swcMinify: true,
-}
+	reactStrictMode: true,
+	swcMinify: true,
+	images: {
+		domains: [
+			"images.credly.com",
+			"www.auslandsschulwesen.de",
+			"img-c.udemycdn.com",
+			"upload.wikimedia.org",
+		],
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

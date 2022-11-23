@@ -1,26 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "GrotleyItalic";
+    src: url("../fonts/Grotley-Italic.otf");
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+@font-face {
+    font-family: "GrotleyRegular";
+    src: url("../fonts/Grotley-Regular.otf");
 }
 
-* {
-  box-sizing: border-box;
+@font-face {
+    font-family: "Bagero";
+    src: url("../fonts/Bagero.otf");
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@layer components {
+    .rotateY180{
+        transform: rotateY(180deg);
+    }
+
+    .rotateY180Scale{
+        transform: scale(1.2) rotateY(180deg);
+    }
+
+    .backFaceHide{
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+
+    .cardRotate{
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
 }
