@@ -29,9 +29,9 @@ const CertificationsCard = ({ certification }: Props) => {
 								: "https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg"
 						}
 						alt="Logo"
-						width={200}
+						width={100}
 						height={100}
-						className="rounded-full w-24 h-24 border-green-700 border-4"
+						className="rounded-full w-24 h-24 border-green-700 border-4 object-cover"
 					/>
 				</div>
 				<CertIssuer>{certification.issuer}</CertIssuer>

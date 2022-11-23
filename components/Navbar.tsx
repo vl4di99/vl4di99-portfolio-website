@@ -1,8 +1,8 @@
-import Image from 'next/image';
-import React from 'react';
-import penguinLogo from '../images/PenguinSystemsLogo_NoBG.png';
-import tw from 'tailwind-styled-components';
-import Link from 'next/link';
+import Image from "next/image";
+import React from "react";
+import penguinLogo from "../images/PenguinSystemsLogo_NoBG.png";
+import tw from "tailwind-styled-components";
+import Link from "next/link";
 
 function Navbar() {
 	return (
@@ -16,11 +16,8 @@ function Navbar() {
 					<Link href="/projects">
 						<Li>Projects</Li>
 					</Link>
-					<Link href="/about">
-						<Li>About</Li>
-					</Link>
 					<Link href="/contact">
-						{' '}
+						{" "}
 						<Li>Contact</Li>
 					</Link>
 				</ul>

@@ -6,7 +6,9 @@ type Data = {
 	jobs: Array<{}>;
 	certifications: Array<{}>;
 	courses: Array<string>;
+	education: Array<{}>;
 	awards_honors: Array<{}>;
+	skills: Array<{}>;
 	contact: {};
 };
 
@@ -21,8 +23,8 @@ export default function handler(
 		},
 		jobs: [
 			{
-				title: "Self-Taught Developer",
-				company: "Self-Employed",
+				title: "JavaScript, Python Developer and Freelancer",
+				company: "Freelancer",
 				location: "Remote",
 				startDate: "2016",
 				endDate: "Present",
@@ -112,7 +114,7 @@ export default function handler(
 				company: "Huawei Mobile Services",
 				location: "Remote",
 				startDate: "Jan. 2019",
-				endDate: "Present",
+				endDate: "Oct. 2022",
 				industry: "Design",
 				description: [
 					"I have designed and published about 50 themes on the Huawei Themes market.",
@@ -250,6 +252,16 @@ export default function handler(
 			"Practical Ethical Hacking for Beginners",
 			"Zero to Full Stack Hero - PAPA React",
 		],
+		education: [
+			{
+				institution: "Technical University of Cluj-Napoca",
+				area: "Automation and Computer Science",
+				studyType: "Bachelor",
+				startDate: "2018",
+				endDate: "2022",
+				gpa: 8.8,
+			},
+		],
 		awards_honors: [
 			{
 				title: "Bronze Award - Information Technology Olympics - National Heat",
@@ -290,6 +302,218 @@ export default function handler(
 				issuer: "Microsoft, Certipro Education, EOS Foundation",
 				date: "Apr. 2018",
 				description: "Microsoft Word 2013 Examination",
+			},
+		],
+		skills: [
+			{
+				skill: "HTML",
+				link: "https://www.w3schools.com/html/",
+				image_url: "html5.png",
+			},
+			{
+				skill: "CSS",
+				link: "https://www.w3schools.com/css/",
+				image_url: "css3.png",
+			},
+			{
+				skill: "JavaScript",
+				link: "https://www.w3schools.com/js/",
+				image_url: "js.png",
+			},
+			{
+				skill: "TypeScript",
+				link: "https://www.typescriptlang.org/",
+				image_url: "ts.png",
+			},
+			{
+				skill: "React",
+				link: "https://reactjs.org/",
+				image_url: "react.png",
+			},
+			{
+				skill: "React Native",
+				link: "https://reactnative.dev/",
+				image_url: "react-native.png",
+			},
+			{
+				skill: "NextJS",
+				link: "https://nextjs.org/",
+				image_url: "nextjs.png",
+			},
+			{
+				skill: "MeteorJS",
+				link: "https://www.meteor.com/",
+				image_url: "meteor.png",
+			},
+			{
+				skill: "Node.js",
+				link: "https://nodejs.org/en/",
+				image_url: "nodejs.png",
+			},
+			{
+				skill: "ExpressJS",
+				link: "https://expressjs.com/",
+				image_url: "expressjs.png",
+			},
+			{
+				skill: "Python",
+				link: "https://www.python.org/",
+				image_url: "python.png",
+			},
+			{
+				skill: "Flask",
+				link: "https://flask.palletsprojects.com/",
+				image_url: "flask.png",
+			},
+			{
+				skill: "MySQL",
+				link: "https://www.mysql.com/",
+				image_url: "mysql.png",
+			},
+			{
+				skill: "Microsoft SQL Server",
+				link: "https://www.microsoft.com/en-us/sql-server/sql-server-downloads",
+				image_url: "mssql.png",
+			},
+			{
+				skill: "SQLite",
+				link: "https://www.sqlite.org/index.html",
+				image_url: "sqlite.png",
+			},
+			{
+				skill: "MongoDB",
+				link: "https://www.mongodb.com/",
+				image_url: "mongodb.png",
+			},
+			{
+				skill: "Firebase",
+				link: "https://firebase.google.com/",
+				image_url: "firebase.png",
+			},
+			{
+				skill: "TailwindCSS",
+				link: "https://tailwindcss.com/",
+				image_url: "tailwindcss.png",
+			},
+			{
+				skill: "Bootstrap",
+				link: "https://getbootstrap.com/",
+				image_url: "bootstrap.png",
+			},
+			{
+				skill: "Styled Components",
+				link: "https://styled-components.com/",
+				image_url: "styledcomponents.png",
+			},
+			{
+				skill: "MaterialUI",
+				link: "https://material-ui.com/",
+				image_url: "materialui.png",
+			},
+			{
+				skill: "ChakraUI",
+				link: "https://chakra-ui.com/",
+				image_url: "chakraui.png",
+			},
+			{
+				skill: "Redux",
+				link: "https://redux.js.org/",
+				image_url: "redux.png",
+			},
+			{
+				skill: "Recoil",
+				link: "https://recoiljs.org/",
+				image_url: "recoil.png",
+			},
+			{
+				skill: "GraphQL",
+				link: "https://graphql.org/",
+				image_url: "graphql.png",
+			},
+			{
+				skill: "Axios",
+				link: "https://axios-http.com/",
+				image_url: "axios.png",
+			},
+			{
+				skill: "LoDash",
+				link: "https://lodash.com/",
+				image_url: "lodash.png",
+			},
+			{
+				skill: "Apollo",
+				link: "https://www.apollographql.com/",
+				image_url: "apollo.png",
+			},
+			{
+				skill: "Git",
+				link: "https://git-scm.com/",
+				image_url: "git.png",
+			},
+			{
+				skill: "GitHub",
+				link: "https://www.github.com",
+				image_url: "github.png",
+			},
+			{
+				skill: "GitLab",
+				link: "https://about.gitlab.com/",
+				image_url: "gitlab.png",
+			},
+			{
+				skill: "Jira",
+				link: "https://www.atlassian.com/software/jira",
+				image_url: "jira.png",
+			},
+			{
+				skill: "npm",
+				link: "https://www.npmjs.com/",
+				image_url: "npm.png",
+			},
+			{
+				skill: "Yarn",
+				link: "https://yarnpkg.com/",
+				image_url: "yarn.png",
+			},
+			{
+				skill: "Adobe Photoshop",
+				link: "https://www.adobe.com/products/photoshop.html",
+				image_url: "photoshop.png",
+			},
+			{
+				skill: "Adobe Illustrator",
+				link: "https://www.adobe.com/products/illustrator.html",
+				image_url: "illustrator.png",
+			},
+			{
+				skill: "Adobe Premiere Pro",
+				link: "https://www.adobe.com/products/premiere.html",
+				image_url: "premierepro.png",
+			},
+			{
+				skill: "Windows",
+				link: "https://www.microsoft.com/en-us/windows",
+				image_url: "windows.png",
+			},
+			{
+				skill: "Ubuntu",
+				link: "https://ubuntu.com/",
+				image_url: "ubuntu.png",
+			},
+			{
+				skill: "Debian",
+				link: "https://www.debian.org/",
+				image_url: "debian.png",
+			},
+			{
+				skill: "Microsoft Visual Studio",
+				link: "https://visualstudio.microsoft.com/",
+				image_url: "visualstudio.png",
+			},
+			{
+				skill: "Visual Studio Code",
+				link: "https://code.visualstudio.com/",
+				image_url: "vscode.png",
 			},
 		],
 		contact: {},

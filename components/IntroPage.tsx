@@ -1,13 +1,15 @@
-import React from 'react';
-import tw from 'tailwind-styled-components';
-import { useRecoilValue } from 'recoil';
-import { profileJsonState } from '../recoil/profile';
-import JobsCard from './ProfileInfo/JobsCard';
-import CoursesCard from './ProfileInfo/CoursesCard';
-import Image from 'next/image';
-import ProfilePic from '../images/ProfilePic.jpeg';
-import { Container } from '../styles/CustomComponents';
-import CertificationsCard from './ProfileInfo/CertificationsCard';
+import React from "react";
+import tw from "tailwind-styled-components";
+import { useRecoilValue } from "recoil";
+import { profileJsonState } from "../recoil/profile";
+import JobsCard from "./ProfileInfo/JobsCard";
+import CoursesCard from "./ProfileInfo/CoursesCard";
+import Image from "next/image";
+import ProfilePic from "../images/ProfilePic.jpeg";
+import { Container } from "../styles/CustomComponents";
+import CertificationsCard from "./ProfileInfo/CertificationsCard";
+import EducationCard from "./ProfileInfo/EducationCard";
+import SkillCard from "./ProfileInfo/SkillCard";
 
 type Props = {};
 
@@ -51,6 +53,20 @@ function IntroPage({}: Props) {
 			<JobInfo>
 				<CoursesCard courses={profileInfo.courses} />
 			</JobInfo>
+
+			<ExpTitle>Education</ExpTitle>
+			<HRow />
+			<JobInfo>
+				{profileInfo.education.map((element, index) => (
+					<EducationCard education={element} key={index} />
+				))}
+			</JobInfo>
+
+			<ExpTitle>Skills</ExpTitle>
+			<HRow />
+			<JobInfo>
+				<SkillCard allSkills={profileInfo.skills} />
+			</JobInfo>
 		</Container>
 	);
 }
@@ -72,7 +88,7 @@ const ExpTitle = tw.h1<any>`
 `;
 
 const JobInfo = tw.div<any>`
-  flex flex-row flex-wrap justify-center
+  flex flex-row flex-wrap justify-center w-full
 `;
 
 const HRow = tw.div<any>`

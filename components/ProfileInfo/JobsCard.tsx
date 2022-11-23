@@ -29,7 +29,7 @@ const JobsCard = ({ info }: Props) => {
 						{info.startDate.length > 4
 							? moment(info.startDate).format("MMM YYYY")
 							: info.startDate}{" "}
-						-
+						{" -> "}
 						{info.endDate === "Present"
 							? "Present"
 							: info.endDate.length > 4
