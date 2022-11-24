@@ -6,7 +6,6 @@ import JobsCard from "./ProfileInfo/JobsCard";
 import CoursesCard from "./ProfileInfo/CoursesCard";
 import Image from "next/image";
 import ProfilePic from "../images/ProfilePic.jpeg";
-import { Container } from "../styles/CustomComponents";
 import CertificationsCard from "./ProfileInfo/CertificationsCard";
 import EducationCard from "./ProfileInfo/EducationCard";
 import SkillCard from "./ProfileInfo/SkillCard";
@@ -22,7 +21,7 @@ function IntroPage({}: Props) {
 				<Image
 					src={ProfilePic}
 					alt="Profile Picture"
-					className="rounded-full w-72 h-72 border-green-700 border-4"
+					className="rounded-full w-40 h-40 border-green-700 border-4 lg:w-72 lg:h-72"
 				/>
 				<Text>
 					<div className="text-orange-100 text-7xl w-full">
@@ -73,22 +72,29 @@ function IntroPage({}: Props) {
 
 export default IntroPage;
 
+const Container = tw.div<any>`
+flex flex-col items-center
+`;
+
 const Header = tw.div<any>`
-flex flex-row items-center justify-start mt-5 px-28
+flex flex-col items-center justify-start mt-5 px-10
+lg:flex-row lg:px-28
 `;
 
 const Text = tw.div<any>`
- flex self-start m-20 text-neutral-100 text-2xl font-grotleyRegular flex-col
- lg:w-4/12
- sm:w-11/12
+ flex flex-col self-start text-neutral-100 text-2xl font-grotleyRegular my-3
+ lg:w-4/12 lg:m-20
+ w-full
 `;
 
 const ExpTitle = tw.h1<any>`
-  text-6xl text-orange-200 font-bagero 
+  text-5xl text-orange-200 font-bagero 
+  lg:text-6xl
 `;
 
 const JobInfo = tw.div<any>`
-  flex flex-row flex-wrap justify-center w-full
+  flex flex-col justify-center w-full
+  lg:flex-row lg:flex-wrap
 `;
 
 const HRow = tw.div<any>`

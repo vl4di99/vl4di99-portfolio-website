@@ -31,7 +31,7 @@ const CertificationsCard = ({ certification }: Props) => {
 						alt="Logo"
 						width={100}
 						height={100}
-						className="rounded-full w-24 h-24 border-green-700 border-4 object-cover"
+						className="rounded-full w-20 h-20 border-green-700 border-4 object-cover lg:w-28 lg:h-28"
 					/>
 				</div>
 				<CertIssuer>{certification.issuer}</CertIssuer>
@@ -54,8 +54,7 @@ const CertificationsCard = ({ certification }: Props) => {
 export default CertificationsCard;
 
 const CardContainer = tw.div<any>`
-	flex items-center m-5 bg-slate-200 rounded-3xl bg-clip-padding backdrop-filter bg-opacity-60 border-gray-100
-	sm:w-1/2 sm:h-20
+	flex items-center m-5 bg-slate-200 rounded-3xl bg-clip-padding backdrop-filter bg-opacity-60 border-gray-100 w-1/2 h-40 self-center
 	lg:w-96 lg:h-52
 	cardRotate
 	hover:rotateY180
@@ -63,7 +62,8 @@ const CardContainer = tw.div<any>`
 `;
 
 const CertName = tw.h3`
-	text-neutral-100 text-xl col-span-2
+	text-neutral-100 text-md col-span-2
+	lg:text-xl
 `;
 
 const Date = tw.h3`
@@ -71,7 +71,7 @@ const Date = tw.h3`
 `;
 
 const CertIssuer = tw.h4`
-	text-neutral-200 text-lg
+	text-neutral-200 text-sm lg:text-lg
 `;
 
 const CardFront = tw.div<any>`
