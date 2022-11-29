@@ -30,10 +30,10 @@ function Navbar() {
 					<Link href="/projects">
 						<Li>Projects</Li>
 					</Link>
-					<Link href="/contact">
+					<a href="https://devisoft.tech/contact">
 						{" "}
 						<Li>Contact</Li>
-					</Link>
+					</a>
 				</ul>
 			</div>
 		</MainContainer>
