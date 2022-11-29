@@ -1,4 +1,6 @@
-export const amongUs = {
+import type { ISourceOptions } from "tsparticles-engine";
+
+export const amongUs: ISourceOptions = {
 	fullScreen: {
 		enable: true,
 		zIndex: -9999,
