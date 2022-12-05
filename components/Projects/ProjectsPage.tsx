@@ -30,7 +30,9 @@ const Container = tw.div<any>`
 `;
 
 const CardsContainer = tw.div<any>`
-    flex flex-wrap mt-5 justify-evenly
+flex flex-col justify-center w-full
+lg:flex-row lg:flex-wrap lg:justify-evenly
+mt-5 
 `;
 
 const Title = tw.h2<any>`

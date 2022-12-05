@@ -59,7 +59,7 @@ const Container = tw.div<any>`
 `;
 
 const MiniContainer = tw.div<any>`
-  block justify-between items-center bg-emerald-900 p-5 w-full bg-opacity-80 border-2 rounded-lg h-full
+  block bg-emerald-900 p-5 w-full bg-opacity-80 border-2 rounded-lg h-full
 `;
 
 const TopInfo = tw.div<any>`

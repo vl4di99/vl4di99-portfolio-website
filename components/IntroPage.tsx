@@ -63,9 +63,11 @@ function IntroPage({}: Props) {
 
 			<ExpTitle>Skills</ExpTitle>
 			<HRow />
-			<JobInfo>
-				<SkillCard allSkills={profileInfo.skills} />
-			</JobInfo>
+			<SkillInfo>
+				{profileInfo.skills.map((skill, index) => (
+					<SkillCard skill={skill} key={index} />
+				))}
+			</SkillInfo>
 		</Container>
 	);
 }
@@ -88,7 +90,7 @@ const Text = tw.div<any>`
 `;
 
 const ExpTitle = tw.h1<any>`
-  text-5xl text-orange-200 font-bagero 
+  text-3xl text-orange-200 font-bagero 
   lg:text-6xl
 `;
 
@@ -100,3 +102,9 @@ const JobInfo = tw.div<any>`
 const HRow = tw.div<any>`
   bg-white h-2 w-1/2 m-2 rounded-xl
   `;
+
+const SkillInfo = tw.div<any>`
+flex flex-row justify-center items-center flex-wrap
+border-solid border-red-100 border-4 border-spacing-5 m-5 p-5 rounded-3xl gap-10 w-11/12
+lg:w-2/3
+`;

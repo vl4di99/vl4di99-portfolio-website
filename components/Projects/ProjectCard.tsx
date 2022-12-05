@@ -95,8 +95,9 @@ export default ProjectCard;
 
 const Container = tw.div<any>`
 	flex flex-col items-center cursor-pointer 
-	border-white p-2 border-2 bg-zinc-600 bg-opacity-70 rounded-xl w-1/4 h-auto m-5
+	border-white p-2 border-2 bg-zinc-600 bg-opacity-70 rounded-xl w-11/12 h-auto m-5
 	hover:scale-90 hover:transition-all
+	lg:w-1/4
 `;
 
 const MiniContainer = tw.div<any>`
