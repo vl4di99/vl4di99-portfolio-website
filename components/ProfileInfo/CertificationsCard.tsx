@@ -54,7 +54,7 @@ const CertificationsCard = ({ certification }: Props) => {
 export default CertificationsCard;
 
 const CardContainer = tw.div<any>`
-	flex items-center m-5 bg-slate-200 rounded-3xl bg-clip-padding backdrop-filter bg-opacity-60 border-gray-100 w-1/2 h-40 self-center
+	flex items-center m-5 bg-slate-200 rounded-3xl bg-clip-padding backdrop-filter bg-opacity-60 border-gray-100 w-3/4 h-44 self-center
 	lg:w-96 lg:h-52
 	cardRotate
 	hover:rotateY180
