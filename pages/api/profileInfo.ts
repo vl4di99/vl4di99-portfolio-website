@@ -88,8 +88,8 @@ export default function handler(
 				title: "Content Creator",
 				company: "Huawei Technologies",
 				location: "Remote",
-				startDate: "Sept. 2019",
-				endDate: "Mar. 2022",
+				startDate: "Sept 2019",
+				endDate: "Mar 2022",
 				industry: "Content Writing",
 				description: [
 					"During this job, I had to write each week an article regarding a Huawei device or a feature from the OS.",
@@ -100,8 +100,8 @@ export default function handler(
 				title: "Application Tester",
 				company: "Huawei Mobile Services",
 				location: "Remote",
-				startDate: "Nov. 2018",
-				endDate: "Dec. 2019",
+				startDate: "Nov 2018",
+				endDate: "Dec 2019",
 				industry: "Testing",
 				description: [
 					"I have tested several Beta applications, reporting what functionality is wrong with them and also what can be improved.",
@@ -113,8 +113,8 @@ export default function handler(
 				title: "Huawei Themes Designer",
 				company: "Huawei Mobile Services",
 				location: "Remote",
-				startDate: "Jan. 2019",
-				endDate: "Oct. 2022",
+				startDate: "Jan 2019",
+				endDate: "Oct 2022",
 				industry: "Design",
 				description: [
 					"I have designed and published about 50 themes on the Huawei Themes market.",
@@ -126,7 +126,7 @@ export default function handler(
 				title: "Administrator/Creator",
 				company: "Huawei Fans Romania",
 				location: "Romania",
-				startDate: "Jul. 2019",
+				startDate: "Jul 2019",
 				endDate: "Present",
 				industry: "Marketing, Content Creation, Content Moderation",
 				description: [
@@ -138,7 +138,7 @@ export default function handler(
 				title: "Community Moderator and Content Creator",
 				company: "Huawei Enterprise Romania",
 				location: "Romania",
-				startDate: "Jan. 2021",
+				startDate: "Jan 2021",
 				endDate: "Present",
 				industry: "Marketing, Content Creation, Content Moderation",
 				description: [
