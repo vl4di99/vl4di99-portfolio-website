@@ -9,7 +9,7 @@ type Data = {
 	education: Array<{}>;
 	awards_honors: Array<{}>;
 	skills: Array<{}>;
-	contact: {};
+	softSkills: Array<{}>;
 };
 
 export default function handler(
@@ -516,6 +516,77 @@ export default function handler(
 				image_url: "vscode.png",
 			},
 		],
-		contact: {},
+		softSkills: [
+			{
+				skill: "Teamwork",
+				link: "https://www.google.com/search?q=teamwork",
+				image_url: "teamwork.png",
+			},
+			{
+				skill: "Communication",
+				link: "https://www.google.com/search?q=communication",
+				image_url: "communication.png",
+			},
+			{
+				skill: "Problem Solving",
+				link: "https://www.google.com/search?q=problem+solving",
+				image_url: "problemsolving.png",
+			},
+			{
+				skill: "Leadership",
+				link: "https://www.google.com/search?q=leadership",
+				image_url: "leadership.png",
+			},
+			{
+				skill: "Self Motivation",
+				link: "https://www.google.com/search?q=self+motivation",
+				image_url: "selfmotivation.png",
+			},
+			{
+				skill: "Creative Thinking",
+				link: "https://www.google.com/search?q=creative+thinking",
+				image_url: "creativethinking.png",
+			},
+			{
+				skill: "Out of the Box Thinking",
+				link: "https://www.google.com/search?q=out+of+the+box+thinking",
+				image_url: "outoftheboxthinking.png",
+			},
+			{
+				skill: "Empathy",
+				link: "https://www.google.com/search?q=empathy",
+				image_url: "empathy.png",
+			},
+			{
+				skill: "Adaptability",
+				link: "https://www.google.com/search?q=adaptability",
+				image_url: "adaptability.png",
+			},
+			{
+				skill: "Coaching",
+				link: "https://www.google.com/search?q=coaching",
+				image_url: "coaching.png",
+			},
+			{
+				skill: "Ambition",
+				link: "https://www.google.com/search?q=ambition",
+				image_url: "ambition.png",
+			},
+			{
+				skill: "Analytical Thinking",
+				link: "https://www.google.com/search?q=analytical+thinking",
+				image_url: "analyticalthinking.png",
+			},
+			{
+				skill: "Critical Thinking",
+				link: "https://www.google.com/search?q=critical+thinking",
+				image_url: "criticalthinking.png",
+			},
+			{
+				skill: "Decision Making",
+				link: "https://www.google.com/search?q=decision+making",
+				image_url: "decisionmaking.png",
+			},
+		],
 	});
 }

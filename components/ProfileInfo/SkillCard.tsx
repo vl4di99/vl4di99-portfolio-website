@@ -56,6 +56,6 @@ const ImageContainer = tw.div<any>`
 `;
 
 const SkillName = tw.h3`
-	text-sm text-white font-bold
-	lg:text-lg
+	text-sm text-white font-bold w-40 text-center p-2
+	lg:text-lg break-words
 `;

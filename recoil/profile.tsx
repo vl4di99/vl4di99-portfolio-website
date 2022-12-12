@@ -12,6 +12,6 @@ export const profileJsonState = atom({
 		education: [],
 		awards_honors: [],
 		skills: [],
-		contact: {},
+		softSkills: [],
 	}, // default value (aka initial value)
 });
