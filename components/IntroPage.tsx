@@ -9,6 +9,7 @@ import ProfilePic from "../images/ProfilePic.jpeg";
 import CertificationsCard from "./ProfileInfo/CertificationsCard";
 import EducationCard from "./ProfileInfo/EducationCard";
 import SkillCard from "./ProfileInfo/SkillCard";
+import SoftSkillCard from "./ProfileInfo/SoftSkillCard";
 
 type Props = {};
 
@@ -61,11 +62,19 @@ function IntroPage({}: Props) {
 				))}
 			</JobInfo>
 
-			<ExpTitle>Skills</ExpTitle>
+			<ExpTitle>Hard Skills</ExpTitle>
 			<HRow />
 			<SkillInfo>
 				{profileInfo.skills.map((skill, index) => (
 					<SkillCard skill={skill} key={index} />
+				))}
+			</SkillInfo>
+
+			<ExpTitle>Soft Skills</ExpTitle>
+			<HRow />
+			<SkillInfo>
+				{profileInfo.softSkills.map((skill, index) => (
+					<SoftSkillCard skill={skill} key={index} />
 				))}
 			</SkillInfo>
 		</Container>
@@ -104,7 +113,7 @@ const HRow = tw.div<any>`
   `;
 
 const SkillInfo = tw.div<any>`
-flex flex-row justify-center items-center flex-wrap
-border-solid border-red-100 border-4 border-spacing-5 m-5 p-5 rounded-3xl gap-10 w-11/12
-lg:w-2/3
+  flex justify-center flex-wrap my-5
+  border-solid border-red-100 border-4 border-spacing-5 p-5 rounded-3xl gap-10 w-11/12
+  lg:w-2/3
 `;

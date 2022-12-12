@@ -8,7 +8,7 @@ import { profileJsonState } from "../recoil/profile";
 import { NextPage } from "next";
 
 const Home: NextPage<{}> = () => {
-	const [animation, toggleAnimation] = useState(true);
+	const [animation, toggleAnimation] = useState(false);
 	const [, setProfileState] = useRecoilState(profileJsonState);
 
 	useEffect(() => {
