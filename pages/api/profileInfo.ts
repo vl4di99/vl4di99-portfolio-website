@@ -159,6 +159,19 @@ export default function handler(
 					"Use of ReactJS Library and NextJS Framework",
 				],
 			},
+						{
+				title: "JavaScript Full-Stack Developer",
+				company: "Exodigital (StartCo)",
+				location: "Cluj-Napoca, RO",
+				startDate: "2023",
+				endDate: "Present",
+				industry: "Software Development",
+				description: [
+					"Design and Develop REST APIs by using NodeJS, AWS Lambda and use PostgreSQL and DynamoDB",
+					"Front-End Angular System",
+					"Ladder Logic usage and automation of processes",
+				],
+			},
 		],
 		certifications: [
 			{
@@ -346,6 +359,11 @@ export default function handler(
 				image_url: "meteor.png",
 			},
 			{
+				skill: "AngularJS",
+				link: "https://angular.io",
+				image_url: "angular.png",
+			},
+			{
 				skill: "Node.js",
 				link: "https://nodejs.org/en/",
 				image_url: "nodejs.png",
@@ -359,6 +377,11 @@ export default function handler(
 				skill: "Python",
 				link: "https://www.python.org/",
 				image_url: "python.png",
+			},
+			{
+				skill: "AWS Lambda",
+				link: "https://aws.amazon.com/lambda/",
+				image_url: "aws_lambda.png",
 			},
 			{
 				skill: "Flask",
@@ -389,6 +412,16 @@ export default function handler(
 				skill: "Firebase",
 				link: "https://firebase.google.com/",
 				image_url: "firebase.png",
+			},
+			{
+				skill: "PostgreSQL",
+				link: "https://www.postgresql.org/",
+				image_url: "postgresql.png",
+			},
+			{
+				skill: "DynamoDB",
+				link: "https://aws.amazon.com/dynamodb/",
+				image_url: "dynamodb.png",
 			},
 			{
 				skill: "TailwindCSS",
